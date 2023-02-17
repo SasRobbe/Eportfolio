@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+body{
+    margin: 0;
+    background-color: #1B1E28;
+    color: white;
+    font-family: 'Sen', sans-serif;
+    height:100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+/* Nav */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    max-height: 80px;
+    padding-left: 50px;
+    display: flex;
+    padding-top: 10px;
+    z-index: 30;
+}
+
+.dot{
+    color: #7B00CE;
+    font-size: 45px;
+    margin: 0;
+}
+
+.homeButton{
+    color: white;
+    text-decoration: none;
+    font-size: 45px;
+    
+}
+
+.logo{
+    display: flex;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+    margin-left: auto;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    color: white;
+    display: block;
+    height: 25px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+nav li a:hover{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+nav li a:before, nav li a:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -1px;
+    background: white;
+}
+
+nav li a:before{
+    left: 0;
+    transition: 0.5s;
+}
+
+nav li a:after{
+    background: white;
+    right: 0;
+}
+
+nav li a:hover:before{
+    background: white;
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+nav li a:hover:after{
+    background: transparent;
+    width: 100%;
+}
+
+/* Main section */
+
+section{
+    position: absolute;
+    width:100%;
+    animation: fadeInAnimation ease-in 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container{
+    background-attachment: fixed;
+    background-image: url(assests/pexels-robbe-sas-14605885.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1{
+    font-weight: bold;
+    width:100%;
+    min-height: 74vh;
+    background-color: #1B1E28;
+    margin-top:400px;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.profile{
+    margin-bottom:200px;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    text-align: center;
+    font-size:120px;
+    margin-bottom: 50px;
+}
+
+.picture{
+    width: 275px;
+    height: 275px;
+    z-index: 10;
+    border: 15px solid #1B1E28; 
+    outline: 2px solid #7B00CE;
+    border-radius: 50%;
+}
+
+
+.kennismaking{
+    margin-top: 20px;
+    max-width:600px;
+    
+}
+
+.purple{
+    font-weight: bold;
+    color:#7B00CE;
+}
+.purple2{
+    font-weight: bold;
+    font-size: 100px;
+    color:#7B00CE;
+}
+
+.item1{
+    width: 55%;
+    padding-left: 350px;
+}
+
+.item1 h1{
+    font-size: 33px;
+}
+
+.item2{
+    width: 30%;
+    padding-top: 15%;
+}
+
+.cv{
+    text-decoration: none;
+    color:#7B00CE;
+    font-weight: bold;
+    border: 1px #7B00CE solid;
+    border-radius: 20px;
+    padding: 20px 40px 20px 40px;
+    transition: all 0.3s ease;
+}
+
+.cv:hover{
+    background-color: #7B00CE;
+    color:white;
+}
+
+.listFix{
+    list-style-type: none;
+}
+
+.socials{
+    padding-top: 30px;
+    height:50px;
+    width:100%;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.linkedin{
+    width:35px;
+    height:35px;
+    margin-right: 15px;
+}
+
+.twitter{
+    width:35px;
+    height:35px;
+    margin-left: 15px;
+}
+
+/* footer */
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright{
+    background-color: #5B00A5;
+    margin: 0;
+    text-align: center;
+}

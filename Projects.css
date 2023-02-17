@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+body{
+    margin: 0;
+    background-color: #1B1E28;
+    color: white;
+    font-family: 'Sen', sans-serif;
+    height:100%;
+
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+/* Nav */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    max-height: 80px;
+    padding-left: 50px;
+    display: flex;
+    padding-top: 10px;
+    z-index: 30;
+}
+
+.dot{
+    color: #7B00CE;
+    font-size: 45px;
+    margin: 0;
+}
+
+.homeButton{
+    color: white;
+    text-decoration: none;
+    font-size: 45px;
+    
+}
+
+.logo{
+    display: flex;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+    margin-left: auto;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    color: white;
+    display: block;
+    height: 25px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+nav li a:hover{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+nav li a:before, nav li a:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -1px;
+    background: white;
+}
+
+nav li a:before{
+    left: 0;
+    transition: 0.5s;
+}
+
+nav li a:after{
+    background: white;
+    right: 0;
+}
+
+nav li a:hover:before{
+    background: white;
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+nav li a:hover:after{
+    background: transparent;
+    width: 100%;
+}
+
+/* Main section */
+
+.project{
+    max-width:75%;
+    margin: auto;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: row;
+}
+
+.item1{
+    width:60%;
+    border-left: 5px solid #7B00CE;
+    padding-left: 40px;
+    border-bottom: 10px solid #1B1E28;
+    border-top: 10px solid #1B1E28;
+}
+
+.item2{
+    width:45%;
+    height:500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item3{
+    width:60%;
+    border-right: 5px solid #7B00CE;
+    padding-right: 40px;
+    border-bottom: 10px solid #1B1E28;
+    border-top: 10px solid #1B1E28;
+    text-align: right;
+    padding-top: 100px;
+}
+
+.row1{
+    padding-top: 25px;
+    width:75%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonbox{
+    width:230px;
+    height:200px;
+    border-radius: 20px;
+}
+
+.frontEnd{
+    width:420px;
+    height:250px;
+    border-radius: 20px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.weatherstation{
+    width:400px;
+    height:230px;
+    border-radius: 20px;
+}
+
+.frontEnd2{
+    width:400px;
+    height:230px;
+    border-radius: 20px;
+}
+
+/* footer */
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright{
+    background-color: #5B00A5;
+    margin: 0;
+    text-align: center;
+}
