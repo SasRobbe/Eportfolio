@@ -113,7 +113,7 @@ nav li a:hover:after{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-top: 200px;
+    margin-top: 150px;
     height:100%;
 }
 
@@ -162,7 +162,7 @@ textarea{
     padding: 20px 40px 20px 40px;
     transition: all 0.3s ease;
     background-color: #161921;
-    
+    cursor: pointer;
 }
 
 .submit:hover{
