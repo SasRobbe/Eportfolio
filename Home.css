@@ -6,7 +6,7 @@ body{
     color: white;
     font-family: 'Sen', sans-serif;
     height:100%;
-
+    overflow-y: hidden;
 }
 
 /* Nav */
@@ -21,6 +21,9 @@ nav{
     display: flex;
     padding-top: 10px;
     z-index: 20;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .dot{
@@ -122,6 +125,19 @@ section{
     }
 }
 
+.introTitle{
+    z-index: 10;
+    position: relative;
+}
+
+.hands{
+    position: fixed;
+    top:10%;
+    right: 75px;
+    transform: scale(1.3);
+    z-index: 1;
+}
+
 
 /* footer */
 
@@ -142,4 +158,5 @@ footer{
 
 .wave{
     z-index: 10;
+    transform: scalex(-1);
 }

@@ -25,6 +25,9 @@ nav{
     display: flex;
     padding-top: 10px;
     z-index: 30;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .dot{
@@ -113,14 +116,25 @@ nav li a:hover:after{
     margin-top: 250px;
     display: flex;
     flex-direction: row;
+    background:
+    linear-gradient(to right, #7B00CE 2px, transparent 4px) 0 0,
+    linear-gradient(to right, transparent 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, transparent 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, #7B00CE 2px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, #7B00CE 2px, transparent 4px) 0 0,
+    linear-gradient(to bottom, transparent 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, transparent 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, #7B00CE 2px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    padding-top: 30px;
+    padding-bottom: 70px;
 }
 
 .item1{
     width:60%;
-    border-left: 5px solid #7B00CE;
+     /* border-left: 5px solid #7B00CE; */
     padding-left: 40px;
-    border-bottom: 10px solid #1B1E28;
-    border-top: 10px solid #1B1E28;
 }
 
 .item2{
@@ -131,14 +145,12 @@ nav li a:hover:after{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .item3{
     width:60%;
-    border-right: 5px solid #7B00CE;
     padding-right: 40px;
-    border-bottom: 10px solid #1B1E28;
-    border-top: 10px solid #1B1E28;
     text-align: right;
     padding-top: 100px;
 }
@@ -152,18 +164,6 @@ nav li a:hover:after{
     align-items: center;
 }
 
-.buttonbox{
-    width:230px;
-    height:200px;
-    border-radius: 20px;
-}
-
-.frontEnd{
-    width:420px;
-    height:250px;
-    border-radius: 20px;
-}
-
 .projects{
     display: flex;
     flex-direction: column;
@@ -172,16 +172,34 @@ nav li a:hover:after{
     padding-bottom: 200px;
 }
 
+/* Images */
+
+.buttonbox{
+    width:230px;
+    height:200px;
+    border-radius: 20px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(123, 0, 206, 0.5));
+}
+
+.frontEnd{
+    width:420px;
+    height:250px;
+    border-radius: 20px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(123, 0, 206, 0.5));
+}
+
 .weatherstation{
     width:400px;
     height:230px;
     border-radius: 20px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(123, 0, 206, 0.5));
 }
 
 .frontEnd2{
     width:400px;
     height:230px;
     border-radius: 20px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(123, 0, 206, 0.5));
 }
 
 /* footer */
