@@ -10,7 +10,7 @@
     <nav>
         <div class="logo">
             <a class="homeButton" href="./">Robbe</a>
-            <p class="dot">.</p>
+            <p class="logoDot">.</p>
         </div>
         <ul class="menu">
             <li><a href="./About">Over mij</a></li>
@@ -24,27 +24,46 @@
                 <div class="item1">
                     <h1>Project System Engineering and Analysis - quizsysteem</h1>
                     <p>Beschrijving:</p>
-                    <p>Het hoofddoel van dit project was het digitaliseren van een quiz. Op het moment organiseerde deze vzw de quizmomenten op papier. De doelgroep voor deze quiz waren oudere mensen dus moest het enorm gebruiksvriendelijk zijn. Het quizsysteem moest aan bepaalde eisen voldoen. De quizmaster moest controle hebben over de snelheid van de vragen/rondes. De quizmaster moest ook een scorebord kunnen laten tonen dat telkens geüpdatet wordt. Ook was er een jury waar we rekening mee moesten houden. De jury moest de huidige score per team kunnen aanpassen en ook de juiste antwoorden in de verbetersleutel van te voren doorgeven. De verbetersleutel moest natuurlijk ook aangepast kunnen worden. De antwoorden van de teams moesten via een fysieke knoppendoos. </p>
+                    <p>Het hoofddoel van dit project was het digitaliseren van een quiz. Op het moment organiseerde deze vzw de quizmomenten op papier. De doelgroep voor deze quiz waren oudere mensen dus moest het enorm gebruiksvriendelijk zijn. Het quizsysteem moest aan bepaalde eisen voldoen. De quizmaster moest controle hebben over de snelheid van de vragen/rondes. De quizmaster moest ook een scorebord kunnen laten tonen dat telkens geüpdatet wordt. Ook was er een jury waar we rekening mee moesten houden. De jury moest de huidige score per team kunnen aanpassen en ook de juiste antwoorden in de verbetersleutel van te voren doorgeven. De verbetersleutel moest natuurlijk ook aangepast kunnen worden. De antwoorden van de teams moesten via een fysieke knoppendoos.</p>
                     <p>Wij hadden dit project aangepakt door een custom API te maken dat via webpagina’s de API kan aanspreken en zo data in en uit een database te halen. De Api was volledig in Python geschreven. Waar ik me vooral mee bezig heb gehouden was de front-end en de styling van de front-end. De front-end zijn de webpagina’s dat de Api gaat aanspreken door de interactie van de gebruiker. Dit hebben we gedaan aan de hand van REACT en ik heb deze pagina's stijl gegeven met CSS. Waar ik me ook mee bezig heb gehouden was de fysieke opstellen om de antwoorden door te geven. Dit hebben we gedaan door wat code te schrijven op een Raspberry Pi dat ook de API kan aanspreken. Aan deze Raspberry Pi waren knoppen met Ledjes aan verbonden.</p>
                     <p>Heel dit project werd uitgevoerd op een agile manier. Dit wil zeggen dat wij verschillende fases hebben doorlopen om vervolgens ons eindresultaat te krijgen. Tijdens deze fases heb ik enorm veel soft skills bijgeleerd en aangescherpt om dan uiteindelijk tot de proof of concept te komen.</p>
                 </div>
-                <div class="item2">
-                    <div class="row1">
-                        <img class="buttonbox" src="assests/ssaa.png">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 2</div>
+                      <img src="./assests/concepts/concept1.png" style="width:100%">
+                      <div class="text">Knoppen doos</div>
                     </div>
-                    <div class="row2">
-                        <img class="frontEnd" src="assests/frontEnd.PNG">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 2</div>
+                      <img src="./assests/concepts/concept2.png" style="width:100%">
+                      <div class="text">FrontEnd</div>
                     </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
                 </div>
+
             </div>
             <div class="project">
-               <div class="item2">
-                    <div class="row1">
-                        <img class="weatherstation" src="assests/weatherstation.PNG">
+                <div class="slideshow-container2">
+
+                    <div class="mySlides2 fade">
+                      <div class="numbertext2">1 / 2</div>
+                      <img src="./assests/concepts/concept3.png" style="width:100%">
+                      <div class="text2">Opstelling</div>
                     </div>
-                    <div class="row2">
-                        <img class="frontEnd2" src="assests/frontEnd2.PNG">
+
+                    <div class="mySlides2 fade">
+                      <div class="numbertext2">2 / 2</div>
+                      <img src="./assests/concepts/concept4.png" style="width:100%">
+                      <div class="text2">FrontEnd</div>
                     </div>
+
+                    <a class="prev2" onclick="plusSlides2(-1)">❮</a>
+                    <a class="next2" onclick="plusSlides2(1)">❯</a>
                 </div>
                 <div class="item3 right">
                     <h1>Project IOT Essentials - weerstation</h1>
@@ -59,5 +78,51 @@
     <footer>
         <p class="copyright">Robbe Sas - Student Thomas More</p> 
     </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
+    <script>
+        let slideIndex2 = 1;
+        showSlides2(slideIndex2);
+
+        function plusSlides2(n) {
+          showSlides2(slideIndex2 += n);
+        }
+
+        function currentSlide2(n) {
+          showSlides2(slideIndex2 = n);
+        }
+
+        function showSlides2(n) {
+          let i;
+          let slides2 = document.getElementsByClassName("mySlides2");
+          if (n > slides2.length) {slideIndex2 = 1}    
+          if (n < 1) {slideIndex2 = slides2.length}
+          for (i = 0; i < slides2.length; i++) {
+            slides2[i].style.display = "none";  
+          }
+          slides2[slideIndex2-1].style.display = "block";  
+        }
+    </script>
 </body>
 </html>
