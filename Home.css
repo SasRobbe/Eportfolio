@@ -113,6 +113,9 @@ section{
     animation: fadeInAnimation ease-in 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 
