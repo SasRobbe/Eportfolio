@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Projects.css">
@@ -7,7 +7,7 @@
     <title>Projects</title>
 </head>
 <body>
-    <nav>
+   <nav>
         <div class="logo">
             <a class="homeButton" href="./">Robbe</a>
             <p class="logoDot">.</p>
@@ -19,35 +19,48 @@
         </ul>
     </nav>
     <section>
-        <div class="projects">
-            <div class="project">
-                <div class="item1">
-                    <h1>Project System Engineering and Analysis - quizsysteem</h1>
-                    <p>Beschrijving:</p>
-                    <p>Het hoofddoel van dit project was het digitaliseren van een quiz. Op het moment organiseerde deze vzw de quizmomenten op papier. De doelgroep voor deze quiz waren oudere mensen dus moest het enorm gebruiksvriendelijk zijn. Het quizsysteem moest aan bepaalde eisen voldoen. De quizmaster moest controle hebben over de snelheid van de vragen/rondes. De quizmaster moest ook een scorebord kunnen laten tonen dat telkens geüpdatet wordt. Ook was er een jury waar we rekening mee moesten houden. De jury moest de huidige score per team kunnen aanpassen en ook de juiste antwoorden in de verbetersleutel van te voren doorgeven. De verbetersleutel moest natuurlijk ook aangepast kunnen worden. De antwoorden van de teams moesten via een fysieke knoppendoos.</p>
-                    <p>Wij hadden dit project aangepakt door een custom API te maken dat via webpagina’s de API kan aanspreken en zo data in en uit een database te halen. De Api was volledig in Python geschreven. Waar ik me vooral mee bezig heb gehouden was de front-end en de styling van de front-end. De front-end zijn de webpagina’s dat de Api gaat aanspreken door de interactie van de gebruiker. Dit hebben we gedaan aan de hand van REACT en ik heb deze pagina's stijl gegeven met CSS. Waar ik me ook mee bezig heb gehouden was de fysieke opstellen om de antwoorden door te geven. Dit hebben we gedaan door wat code te schrijven op een Raspberry Pi dat ook de API kan aanspreken. Aan deze Raspberry Pi waren knoppen met Ledjes aan verbonden.</p>
-                    <p>Heel dit project werd uitgevoerd op een agile manier. Dit wil zeggen dat wij verschillende fases hebben doorlopen om vervolgens ons eindresultaat te krijgen. Tijdens deze fases heb ik enorm veel soft skills bijgeleerd en aangescherpt om dan uiteindelijk tot de proof of concept te komen.</p>
-                </div>
-                <div class="slideshow-container">
-
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 2</div>
-                      <img src="./assests/concepts/concept1.png" style="width:100%">
-                      <div class="text">Knoppendoos</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 2</div>
-                      <img src="./assests/concepts/concept2.png" style="width:100%">
-                      <div class="text">FrontEnd</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-                </div>
-
+        <div class="container ">
+            <div class="arrow l" onclick="prev()">
+                <img src="assests/l.png" alt="l">
             </div>
-            <div class="project">
+            <div class="slide slide-1">
+                 <div class="project">
+                    <div class="item1">
+                        <h1>Project System Engineering and Analysis - quizsysteem</h1>
+                        <h3>Beschrijving:</h3>
+                        <p>Het hoofddoel van dit project was het digitaliseren van een quiz. Op het moment organiseerde deze vzw de quizmomenten op papier. De doelgroep voor deze quiz waren oudere mensen dus moest het enorm gebruiksvriendelijk zijn. Het quizsysteem moest aan bepaalde eisen voldoen. De quizmaster moest controle hebben over de snelheid van de vragen/rondes. De quizmaster moest ook een scorebord kunnen laten tonen dat telkens geüpdatet wordt. Ook was er een jury waar we rekening mee moesten houden. De jury moest de huidige score per team kunnen aanpassen en ook de juiste antwoorden in de verbetersleutel van te voren doorgeven. De verbetersleutel moest natuurlijk ook aangepast kunnen worden. De antwoorden van de teams moesten via een fysieke knoppendoos doorgestuurd kunnen worden.</p>
+                        <h3>Mijn bijdrage:</h3>
+                        <p>Waar ik me vooral mee bezig heb gehouden was de front-end en de styling van de front-end. De front-end zijn de webpagina’s dat de Api gaat aanspreken door de interactie van de gebruiker. Dit hebben we gedaan aan de hand van REACT en ik heb deze pagina's stijl gegeven met CSS. Waar ik me ook mee bezig heb gehouden was de fysieke opstellen om de antwoorden door te geven. Dit hebben we gedaan door wat code te schrijven op een Raspberry Pi dat ook de API kan aanspreken. Aan deze Raspberry Pi waren knoppen met Ledjes aan verbonden.</p>
+                        <h3>Vaardigheden:</h3>
+                        <ul>
+                            <li>Op een agile manier een project aanpakken</li>
+                            <li>Rest API</li>
+                            <li>Gebruik van Raspberry Pi</li>
+                            <li>Front-End via REACT</li>
+                            <li>Front-End styling</li>
+                        </ul>
+                    </div>
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 2</div>
+                          <img src="./assests/concepts/concept1.png" style="width:100%">
+                          <div class="text">Knoppendoos</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 2</div>
+                          <img src="./assests/concepts/concept2.png" style="width:100%">
+                          <div class="text">FrontEnd</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="project2">
                 <div class="slideshow-container2">
 
                     <div class="mySlides2 fade">
@@ -67,18 +80,160 @@
                 </div>
                 <div class="item3 right">
                     <h1>Project IOT Essentials - weerstation</h1>
-                    <p>Beschrijving:</p>
+                    <h3>Beschrijving:</h3>
                     <p>Dit was een van mijn eerste projecten binnen mijn opleiding in het hoger. Het project was volledig zelfstandig en het doel was om een weerstation te maken dat waardes via sensoren kan aflezen en vervolgens naar een Raspberry Pi doorstuurt. De 2 sensoren die bevestigd waren kunnen de temperatuur, hoogte en lichtlevel lezen. Deze waardes moesten vervolgens op een webpagina met grafieken getoond kunnen worden. dit project was volledig in C++ en PHP geschreven. De styling op de webpagina werd gedaan met CSS. </p>
                     <p>Aangezien er een uitgebreid document en een video over dit document en het feit dit één van mijn eerste projecten was, heb ik veel kunnen leren over het efficiënt documenteren en uitwerken van een volledig project. Dit was het eerste project waar ik een volledig afgewerkt product heb afgeleverd, dus zeker een project om te herinneren.</p>
+                    <h3>Mijn bijdrage:</h3>
+                    <p>Dit project was volledig zelfstandig. Ik moest dan ook van het begin tot het einde alles zelf opzoeken, testen en verbeteren. Voor deze opdracht had ik nog geen kennis in C++. Om hier dan ook waarden van sensoren mee uit te lezen was dus zeker een uitdaging voor mij in mijn eerste academiejaar.  </p>
+                    <h3>Vaardigheden:</h3>
+                        <ul>
+                            <li>C++/html/css/php</li>
+                            <li>Waarden uit sensoren halen</li>
+                            <li>Data met grafieken op webpagina tonen in realtime</li>
+                            <li>Gericht opzoekwerk</li>
+                            <li>Zelfstandig resultaat leveren</li>
+                        </ul>
                 </div>
             </div>
-    
+           </div>
+           <div class="slide slide-3">
+                <div class="project">
+                    <div class="item1">
+                        <h1>Project Hosting - Eigen hosting platform</h1>
+                        <h3>Beschrijving:</h3>
+                        <p>We zijn momenteel nog druk bezig aan dit project. De bedoeling van dit project is dat we een hosting platform moeten opstellen waarbij er PHP-projecten op gehost kunnen worden door een API aan te spreken. Het project moet ook aan een heel extra eisen voldoen. Zo moeten wij bijvoorbeeld het project voldoende beveiligen. Ons groepje van zes personen hebben een heel semester de tijd gekregen door op een agile manier dit project op een succesvole manier te kunnen afronden. Terwijl dit project iets is dat zeer buiten onze comfort zone ligt, gebruiken wij eigenlijk niet veel nieuws. Wij hebben al meerdere keren een API moeten maken, lokaal aan de hand van kubernetes een eigen webstack moeten hosten en systemen beveiligen. Dit project wordt ook extern ondersteund door Tom Cannaerts van het bedrijf iO</p>
+                        <h3>Mijn bijdrage:</h3>
+                        <p>Aangezien wij nog volop bezig zijn met dit project, moet ik de bijdragen nog zeer beknopt houden. Waar ik me al wel mee heb bezig gehouden is de security van het besturingssysteem. Hier heb ik remote een scapscan op uitgevoerd. Deze scapscan voert dan een testje uit om te kijken hoe veilig het systeem is.</p>
+                        <h3>Vaardigheden:</h3>
+                        <ul>
+                            <li>Op een agile manier een project aanpakken</li>
+                            <li>Rest API</li>
+                            <li>Kubernetes</li>
+                            <li>Security</li>
+                            <li>Automatisering door ansible</li>
+                            <li>Linux server</li>
+                        </ul>
+                    </div>
+                    <div class="slideshow-container">
+
+                        <div class="mySlides3 fade">
+                          <div class="numbertext">1 / 2</div>
+                          <img src="./assests/concepts/concept5.png" style="width:100%">
+                          <div class="text">Project Hosting</div>
+                        </div>
+
+                        <div class="mySlides3 fade">
+                          <div class="numbertext">2 / 2</div>
+                          <img src="./assests/concepts/concept6.png" style="width:100%">
+                          <div class="text">Resultaat ScapScan</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides3(-1)">❮</a>
+                        <a class="next" onclick="plusSlides3(1)">❯</a>
+                    </div>
+                </div>
+           </div>
+            <div class="slide slide-4">
+                <div class="project2">
+                <div class="slideshow-container2">
+
+                    <div class="mySlides4 fade">
+                      <div class="numbertext2">1 / 2</div>
+                      <img src="./assests/concepts/concept7.png" style="width:100%">
+                      <div class="text2">Frontend Shuffle pagina</div>
+                    </div>
+
+                    <div class="mySlides4 fade">
+                      <div class="numbertext2">2 / 2</div>
+                      <img src="./assests/concepts/concept8.png" style="width:100%">
+                      <div class="text2">Python code</div>
+                    </div>
+
+                    <a class="prev2" onclick="plusSlides4(-1)">❮</a>
+                    <a class="next2" onclick="plusSlides4(1)">❯</a>
+                </div>
+                <div class="item3 right">
+                    <h1>Project API Development - Spotify</h1>
+                        <h3>Beschrijving:</h3>
+                        <p>Dit was mijn eerste project waarbij ik zelf een API heb moeten schrijven. Deze API moest via een webpagina kunnen communiceren. Wij mochten zelf kiezen over welk thema we de API wouden maken. Ik heb ervoor gekozen om dit over Spotify te doen. Eerst was ik van plan om de API van Spotify zelf hier ook in te verwerken, maar heb dit uiteindelijk niet gedaan. De API maakt gebruik van een aantal simpele GET en POST requests. Op de webpagina kan ik bijvoorbeeld een random song opvragen. Of zelf een song toevoegen aan de lijst met songs en hierbij de playlist vermelden waarbij deze bijgezet zou moeten worden.</p>
+                        <h3>Mijn bijdrage:</h3>
+                        <p>Dit was een project waarbij ik zelf de uitkomst van mocht bepalen. Natuurlijk waren er wel een aantal verplichtingen. Dit project was ook volledig zelfstandig dus alles van het begin tot het einde heb ikzelf gemaakt. </p>
+                        <h3>Vaardigheden:</h3>
+                        <ul>
+                            <li>Rest API</li>
+                            <li>cors security</li>
+                            <li>API aanspreekbaar maken in Front-End</li>
+                            <li>Front-End styling</li>
+                        </ul>
+                </div>
+            </div>
+           </div>
+           <div class="arrow r" onclick="next()">
+                <img src="assests/r.png" alt="r">
+            </div>
         </div>
     </section>
     <footer>
-        <p class="copyright">Robbe Sas - Student Thomas More</p> 
+        <p class="copyright">Robbe Sas - Cloud 	&amp; Cyberscurty student @ Thomas More</p> 
     </footer>
-    <script>
+</body>
+<script>
+        let slide = document.querySelectorAll('.slide');
+        var current = 0;
+
+        function cls(){
+            for(let i = 0; i < slide.length; i++){
+                  slide[i].style.display = 'none';
+            }
+        }
+
+        function next(){
+            cls();
+            if(current === slide.length-1) current = -1;
+            current++;
+
+            slide[current].style.display = 'block';
+            slide[current].style.opacity = 0.4;
+
+            var x = 0.4;
+            var intX = setInterval(function(){
+                x+=0.1;
+                slide[current].style.opacity = x;
+                if(x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+
+        }
+
+        function prev(){
+            cls();
+            if(current === 0) current = slide.length;
+            current--;
+
+            slide[current].style.display = 'block';
+            slide[current].style.opacity = 0.4;
+
+            var x = 0.4;
+            var intX = setInterval(function(){
+                x+=0.1;
+                slide[current].style.opacity = x;
+                if(x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+
+        }
+
+        function start(){
+            cls();
+            slide[current].style.display = 'block';
+        }
+        start();
+    </script>
+        <script>
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -124,5 +279,50 @@
           slides2[slideIndex2-1].style.display = "block";  
         }
     </script>
-</body>
+    <script>
+        let slideIndex3 = 1;
+        showSlides3(slideIndex3);
+
+        function plusSlides3(n) {
+          showSlides3(slideIndex3 += n);
+        }
+
+        function currentSlide3(n) {
+          showSlides3(slideIndex3 = n);
+        }
+
+        function showSlides3(n) {
+          let i;
+          let slides3 = document.getElementsByClassName("mySlides3");
+          if (n > slides3.length) {slideIndex3 = 1}    
+          if (n < 1) {slideIndex3 = slides3.length}
+          for (i = 0; i < slides3.length; i++) {
+            slides3[i].style.display = "none";  
+          }
+          slides3[slideIndex3-1].style.display = "block";  
+        }
+    </script>
+    <script>
+        let slideIndex4 = 1;
+        showSlides4(slideIndex4);
+
+        function plusSlides4(n) {
+          showSlides4(slideIndex4 += n);
+        }
+
+        function currentSlide4(n) {
+          showSlides4(slideIndex4 = n);
+        }
+
+        function showSlides4(n) {
+          let i;
+          let slides4 = document.getElementsByClassName("mySlides4");
+          if (n > slides4.length) {slideIndex4 = 1}    
+          if (n < 1) {slideIndex4 = slides4.length}
+          for (i = 0; i < slides4.length; i++) {
+            slides4[i].style.display = "none";  
+          }
+          slides4[slideIndex4-1].style.display = "block";  
+        }
+    </script>
 </html>

@@ -201,17 +201,18 @@ section{
 
 .item2{
     width: 30%;
-    padding-top: 15%;
+    padding-top: 22%;
 }
 
 .cv{
     text-decoration: none;
     color:#7B00CE;
     font-weight: bold;
-    border: 1px #7B00CE solid;
+    border: 3px #7B00CE solid;
     border-radius: 20px;
     padding: 20px 40px 20px 40px;
     transition: all 0.3s ease;
+    background-color: #161921;
 }
 
 .cv:hover{
